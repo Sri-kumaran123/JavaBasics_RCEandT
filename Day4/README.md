@@ -59,3 +59,30 @@ This repository contains various Java programs covering topics such as loops, ar
 
    ```bash
    javac FileName.java
+
+
+
+## program
+public class TriangleCheck {
+    public static void main(String[] args) {
+        int a = 5, b = 5, c = 5;
+
+        System.out.println("Sides are: " + a + ", " + b + ", " + c);
+
+        // Check triangle validity
+        boolean isValid = (a + b > c) && (b + c > a) && (a + c > b);
+
+        // Use ternary operator for classification
+        String result = isValid
+                ? (a == b && b == c) ?
+                       "Type: Equilateral Triangle"
+                    :   (a == b || b == c || a == c) ? 
+                                "Type: Isosceles Triangle"
+                        :       "Type: Scalene Triangle"
+                : "Not a Valid Triangle.";
+
+        System.out.println(isValid ? "It is a Valid Triangle." : "Not a Valid Triangle.");
+        if (isValid) System.out.println(result);
+    }
+}
+
