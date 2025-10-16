@@ -63,10 +63,13 @@ This repository contains various Java programs covering topics such as loops, ar
 
 
 ## program
-public class TriangleCheck {
+program
+
+
+
+     public class TriangleCheck {
     public static void main(String[] args) {
         int a = 5, b = 5, c = 5;
-
         System.out.println("Sides are: " + a + ", " + b + ", " + c);
 
         // Check triangle validity
@@ -85,4 +88,5 @@ public class TriangleCheck {
         if (isValid) System.out.println(result);
     }
 }
+
 
